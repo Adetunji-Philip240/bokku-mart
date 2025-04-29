@@ -28,6 +28,7 @@
   </head>
   <body>
     <div class="main text-white">
+      <!--Navbar From Medium to Smaller Screen-->
       <div class="d-lg-none">
         <div
           style="
@@ -56,21 +57,24 @@
           </button>
 
           <div id="menu" class="menu d-lg-none">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a style="border-bottom: 2px solid var(--color1)">Home</a>
+            <a href="about-us.html">About Us</a>
             <a href="#">Order Now</a>
             <a href="#">Locations</a>
             <a href="#">Partner With Us</a>
           </div>
         </div>
       </div>
+      <!--Navbar for Larger Screen-->
       <nav class="list-unstyled d-lg-flex justify-content-around w-75 mx-auto">
         <a style="background-color: var(--color1)" href="#"
           ><img src="./images/logo.png" width="120" alt=""
         /></a>
         <div class="justify-content-around d-flex">
-          <li class="mx-4"><a href="#">Home</a></li>
-          <li class="mx-4"><a href="#">About Us</a></li>
+          <li class="mx-4">
+            <a style="border-bottom: 2px solid var(--color1)">Home</a>
+          </li>
+          <li class="mx-4"><a href="about-us.html">About Us</a></li>
           <li class="mx-4"><a href="#">Order Now</a></li>
           <li class="mx-4"><a href="#">Locations</a></li>
           <li class="mx-4"><a href="#">Partner With Us</a></li>
@@ -345,7 +349,8 @@
         <div class="col-6">
           <p>Opening Hours</p>
           <small style="color: var(--color1)"
-            >Mondays - Sunday <br> (9am - 9pm)</small
+            >Mondays - Sunday <br />
+            (9am - 9pm)</small
           >
         </div>
         <div class="col-6">
