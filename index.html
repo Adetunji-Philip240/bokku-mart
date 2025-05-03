@@ -48,12 +48,15 @@
               border-radius: 10px;
               font-size: 20px;
             "
+            class="cart-icon"
+            onclick="toggleCart()"
           >
             <i class="bi bi-cart fw-bolders"></i>
           </div>
 
           <button class="menu-icon d-lg-none" onclick="toggleMenu()">
             <span id="toggler" class="bi bi-list"></span>
+            <span class="notification" id="cartNotification">0</span>
           </button>
 
           <div id="menu" class="menu d-lg-none">
@@ -61,7 +64,6 @@
             <a href="about-us.html">About Us</a>
             <a href="#">Order Now</a>
             <a href="#">Locations</a>
-            <a href="#">Partner With Us</a>
           </div>
         </div>
       </div>
@@ -77,7 +79,6 @@
           <li class="mx-4"><a href="about-us.html">About Us</a></li>
           <li class="mx-4"><a href="#">Order Now</a></li>
           <li class="mx-4"><a href="#">Locations</a></li>
-          <li class="mx-4"><a href="#">Partner With Us</a></li>
         </div>
 
         <div
@@ -86,8 +87,11 @@
             padding: 10px;
             border-radius: 10px;
           "
+          class="cart-icon"
+          onclick="toggleCart()"
         >
           <i class="bi bi-cart fw-bolders"></i>
+          <span class="notification" id="notification">0</span>
         </div>
       </nav>
       <div class="w-75 d-block mx-auto">
@@ -123,6 +127,14 @@
             />
           </div>
         </div>
+      </div>
+      <div class="cart" id="cart">
+        <span class="close-cart" onclick="toggleCart()">✖</span>
+        <h2>Shopping List</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total: ₦ 0</p>
+
+        <button class="buy-now" id="buyNow" onclick="buyNow()">Buy Now</button>
       </div>
 
       <div class="goods-list">
@@ -190,6 +202,7 @@
                       border-radius: 5px;
                     "
                     class="p-1 px-2"
+                    onclick="addToCart('Big Bull Parboiled Rice (50kg)', 78000)"
                   >
                     Add to Cart
                   </button>
@@ -219,6 +232,7 @@
                       border-radius: 5px;
                     "
                     class="p-1 px-2"
+                    onclick="addToCart('Dano Cool Cow Milk (320g)', 2850)"
                   >
                     Add to Cart
                   </button>
@@ -244,6 +258,7 @@
                       border-radius: 5px;
                     "
                     class="p-1 px-2"
+                    onclick="addToCart('Annona Strawberry Jam', 3300)"
                   >
                     Add to Cart
                   </button>
@@ -269,6 +284,7 @@
                       border-radius: 5px;
                     "
                     class="p-1 px-2"
+                    onclick="addToCart('Bama Mayonnaise', 2100)"
                   >
                     Add to Cart
                   </button>

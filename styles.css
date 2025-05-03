@@ -281,3 +281,66 @@ nav {
     width: 300px;
   }
 }
+
+/*For cart */
+
+.cart {
+  position: fixed; /* Overlay the cart */
+  top: 100px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: var(--color1);
+  display: none; /* Initially hidden */
+  z-index: 1000; /* Ensure it appears above other content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 24px;
+  position: fixed; /* Keep icon fixed in view */
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+.close-cart {
+  cursor: pointer;
+  color: var(--color2);
+  float: right;
+  font-size: 18px;
+}
+
+.notification {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  display: none; /* Initially hidden */
+}
+
+.delete-button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.buy-now {
+  background-color: var(--color2);
+  margin-top: 10px;
+  color: var(--color1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+}
